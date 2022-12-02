@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> DIFFERENCE BETWEEN DOCUMENT OBJECT AND WINDOW OBJECT</title>
+        <h2 style ="color: blue;"><i>DIFFERENCE BETWEEN DOCUMENT OBJECT AND WINDOW OBJECT</i></h2>
+    </head>
+
+    <body>
+        <p>A clear understanding of Browser Object Model (BOM) and Document Object Model(DOM) resolves the problem.</p>
+        <h3>BROWSER OBJECT MODEL(BOM):</h3>
+        <p>The Browser Object Model contains objects that represent the current browser window or tab. The topmost object in the BOM is the window object representing the window or tab or an iframe sometimes. Window object has properties like browser history, location and the device’s screen etc. In case of multi tab browser, a window object represents a single tab, but some of its properties like innerHeight, innerWidth and methods like resizeTo() will affect the whole browser window.</p>
+       <h3>DOCUMENT OBJECT MODEL: </h3>
+       <p>When a web page is loaded, the browser creates a Document Object Model of the page. The document object represents the whole html document as a tree of Objects(HTML, HEAD, BODY, and other HTML tags). It is the root element that represents the html document.</p>
+       <p> It is a programming interface that allows us to create, change, or remove elements from the document. We can also add events to these elements to make our page more dynamic. The DOM views an HTML document as a tree of nodes. A node represents an HTML element.</p>
+       <p>
+        The document object is your html, aspx, php, or other document that will be loaded into the browser. The document actually gets loaded inside the window object and has properties available to it like title, URL, cookie, etc.
+        </p>
+        <img src="BOM AND DOM.png" width="500">
+        <p> <i>Figure 1 :Hierarchy of Window and Document object using BOM and DOM</i></p>
+        <hr>
+        <h3>WINDOW OBJECT MODEL:</h3>
+        <P>It is the top most object and outermost element of the object hierarchy as shown in Figure 1.<br>The window object represents a window/tab containing a DOM document where as document object is property of window object that points to the DOM document loaded in that window.</P>
+
+        <p>The window object represents a window/tab containing a DOM document where as document object is property of window object that points to the DOM document loaded in that window.
+            You can access a document object either using window.document property or using document object directly as window is global object. In the below example, title is the property of document object.
+            </p>
+            <img src="comparision.png" width="300">
+            <p>The other major difference is that both window object and document object have properties and methods. Few method names are same in both objects but with different behavior. In the below example <i>window.open()</i> opens a new tab or window and <i>document.open()</i>  creates a blank document within the window.</p>
+            <img src="image.png" width="350">
+            <h3>SCREEN:</h3>
+            <p>
+                Screen is the window property that holds information of browser screen. It refers to screen object associated with that window object. Used to display screen<i> width, height, colorDepth, pixelDepth</i> etc.<br>Similar to document screen can be accessed either by <i>window.screen  or screen</i>  object directly. Screen object doesn't have any methods as in window and document objects.
+            </p>
+            <img src="screen.png" width="300">
+            <hr>
+        </body>
+   
+
+
+
+
+
+
+
+</html>
